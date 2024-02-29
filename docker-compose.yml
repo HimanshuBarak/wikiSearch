@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  wikisearch:
+    build: .
+    ports:
+      - "52207:52207"
+    environment: 
+      - REDIS_URI=redis://0.0.0.0:6379
+    volumes:
+      - .:/project
+      - ./src/app/data:/project/src/app/data
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6380:6379"
+    

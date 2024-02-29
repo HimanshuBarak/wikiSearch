@@ -1,0 +1,119 @@
+h1 {
+  font-size: 30px;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 33px;
+  margin: 7px;
+  padding: 0;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 1rem;
+}
+.indexed-posts-info h2 {
+  font-size: 28px;
+  color: #666; /* Adjust the color as needed */
+  text-align: center;
+}
+.results-sub-heading {
+  font-size: 14px;
+  color: #666; /* Adjust the color as needed */
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+.centered-heading h1 {
+  text-align: center;
+  font-size: 60px;
+}
+.centered-heading a{
+  color:black
+}
+hr {
+  margin: 0;
+}
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+.loginlink {
+  text-align: left;
+}
+
+.navbar {
+  background-origin: padding-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Style for the blockquotes, ie: when using > */
+blockquote {
+  border-left: 2px solid #cccccc;
+  /* Add a left border */
+  padding: 0 15px;
+  /* Add some padding for space */
+  margin: 10px 0;
+  /* Add margin for separation */
+  color: #555;
+  /* Set the text color */
+}
+
+/* Style for the post dates */
+.post-date {
+  font-family: "Courier New", Courier, monospace;
+  color: #575757;
+  font-size: 18px;
+}
+
+summary {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 0.25rem 1rem;
+  margin: 0 -1rem;
+}
+
+details[open] {
+  border-bottom: 1rem solid #eee;
+  margin: 0 -1rem 1rem;
+  padding: 0 1rem;
+}
+
+.search-container {
+  display: flex;
+
+  padding: 5px;
+  border: 1px solid #8f8989;
+  border-radius: 5px;
+}
+
+.search-input {
+  min-width: 690px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  margin-left: 4px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  background-color: #e7e7e7;
+  border-radius: 4px; /* Only round the right corners */
+  text-align: center; /* Center the text inside the button */
+}

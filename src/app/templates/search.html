@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block heading %}{% endblock %} {% block content %}
+<body>
+  <div class="centered-heading">
+    <h1><a href="/">WikiSearch</a></h1>
+  </div>
+  <div class="indexed-posts-info">
+    <h2>Search across 1 million+ Wikipedia Posts</h2>
+  </div>
+  <div class="search-container">
+    <form id="searchForm" method="get" action="/">
+      <input
+        type="text"
+        id="query"
+        name="query"
+        placeholder="Enter your search query"
+        required
+        value="{{ query }}"
+        class="search-input"
+      />
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  </div>
+
+  {% if query %} {% endif %} {% if results %}
+  <h3>Results</h2>
+  <hr />
+  <div class="results-sub-heading">
+    <p>Showing top 10 search results :</p>
+    <p> Time: {{time}}</p> 
+  </div>
+  <ul>
+    {% for url, score in results.items() %}
+    <li><a href="{{ url }}">{{ url }}</a> - Score: {{ score }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</body>
+{% endblock %}
