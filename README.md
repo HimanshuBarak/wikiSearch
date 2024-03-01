@@ -6,6 +6,8 @@ https://github.com/HimanshuBarak/wikiSearch/assets/66054954/c3724cb3-7b05-4135-b
 
 A simple search engine writtten in python. Wikisearch allows you to search over 1 million + wikipedia documents and get a result within just <strong>1 sec</strong>. 
 
+
+
 ## Working
 ### Indexing Documents: 
 The search engine allows for indexing web pages or documents by storing the content of each document associated with a unique URL. This process involves normalizing the content (e.g., removing punctuation, converting to lowercase) to ensure consistency and effectiveness in keyword matching.
@@ -58,3 +60,6 @@ python src/search/run.py
 ```
 docker-compose up --build
 ```
+
+
+<strong>Note:</strong> Currently the file pushed has only 190k docs. you can download bigger wikipedia files dumps from here: https://dumps.wikimedia.org/enwiki/latest/ and use the search engine on them as well
